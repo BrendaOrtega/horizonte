@@ -19,6 +19,7 @@
     justify-content: center;
     text-align: center;
     font-size: 36px;
+
 }
 .video-box p{
     width: 60%;
@@ -188,4 +189,152 @@ ABOUT*/
 }
 .card-small p{
     font-size: 16px;
+}
+
+
+.slide-initial{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 36px;
+    padding-left:5%;
+}
+.box-home{
+
+    width: 440px;
+    height:auto;
+    background-color: white;
+
+    padding: 16px 24px;
+}
+.hm{
+    line-height: 60px;
+}
+.manifiesto{
+    width: 100%;
+    padding: 100px 20% 30px 20%;
+    box-sizing: border-box;
+    background-color: white;
+    text-align: center;
+}
+.manifiesto img{
+    width: 80%;
+}
+.manifiesto p{
+    font-size: 24px;
+    font-family: "Brevia Medium";
+    line-height: 40px;
+}
+.card-azul{
+
+}
+.products{
+    width: 100%;
+    padding: 32px 10% 56px 10%;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-azul:hover{
+
+}
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 10px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+
+    background-color: #3B5671;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BEC5CE;
+    font-family: "Brevia Medium";
+
+}
+
+/* Style the back side */
+.flip-card-back {
+    transform: rotateY(180deg);
+    color: #3B5671;
+    background-color:#D9D8DD;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Brevia Light";
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+.contacto{
+    height: 100vh;
+    background-color: #fff;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.img-contacto{
+    width: 50%;
+    height: 100%;
+    background-position: 50%;
+    background-size: cover;
+    background-image: url("../assets/Horizonte_030.png");
+
+}
+.form-contacto{
+    -webkit-box-shadow: -5px 1px 11px 1px hsla(0,0%,59%,.25);
+    box-shadow: -5px 1px 11px 1px hsla(0,0%,59%,.25);
+    padding-top: 10%;
+    text-align: center;
+    /* width: 300px; */
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.form_ctc div {
+    border-bottom: 1px solid #dbdbdb;
+    width: 60%;
+    margin: 20px auto;
+}
+.form_ctc div input, .form_ctc div textarea {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.8rem;
 }

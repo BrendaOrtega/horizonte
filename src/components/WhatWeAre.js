@@ -20,7 +20,7 @@ class WhatWeAre extends Component {
                             <h2 className="titulos">¿Quienes somos?</h2>
                             <p className="txt">Nuestra misión es ayudar a familias empresarias para que su patrimonio
                                 perdure por generaciones en armonía familiar</p>
-                            <img src={arrow} alt=""/>
+                            <img src={arrow} alt="arrow"/>
                         </div>
                     </div>
                 </div>

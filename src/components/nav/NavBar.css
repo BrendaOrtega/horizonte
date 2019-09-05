@@ -10,7 +10,12 @@
     position: fixed;
     background-color: white;
     z-index: 999;
+
 }
+.nav a{
+    text-decoration: none;
+}
+
 .nav img{
     height: 60px;
 }

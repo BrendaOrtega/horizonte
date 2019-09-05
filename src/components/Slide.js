@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
-import video from "../assets/Pexels Videos 1932324.mp4"
+import video from "../assets/Banner baja.mp4"
 import {Link} from "react-router-dom"
 
 class Slide extends Component {
