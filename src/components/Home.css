@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 36px;
+    font-size: 48px;
 
 }
 .video-box p{
@@ -337,4 +337,119 @@ ABOUT*/
     width: 100%;
     font-size: 1rem;
     line-height: 1.8rem;
+}
+
+
+.slide-test{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/Horizonte_030.png");
+}
+.back {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 63, 73, .6);
+}
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+    box-sizing: border-box;
+    color: white;
+
+}
+.backi{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 63, 73, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back h2{
+    color: white;
+}
+.back hr{
+   width: 0px;
+    margin-left: 0%;
+    margin-top: -10px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: white;
+    transition: all 1s ease;
+}
+.back div:hover hr{
+    width:300px;
+}
+
+.flip-card-test {
+    background-color: transparent;
+    width: 250px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 10px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner-test {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card-test:hover .flip-card-inner-test {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+/* Position the front and back side */
+.flip-card-front-test, .flip-card-back-test {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front-test {
+
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2D2926;
+    font-family: "Brevia Medium";
+    box-shadow: 6px 12px 28px -18px #BFBCBC;
+
+}
+.linea{
+    width: 32px;
+    height: 3px;
+    background-color: #373F49;
+    border-radius: 2px;
+    border: none;
+}
+.flip-card-front-test:hover .line {
+    width: 120px;
+}
+
+
+/* Style the back side */
+.flip-card-back-test {
+    transform: rotateY(180deg);
+    color: white;
+    background-color:#3b5671;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Brevia Light";
+    padding: 0 2%;
+    box-sizing: border-box;
 }

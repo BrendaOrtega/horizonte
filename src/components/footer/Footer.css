@@ -38,3 +38,18 @@
     border-top: 2px solid rgb(248, 248, 247);
     padding-top: 14px;
 }
+
+.footer-test{
+    background-color: #373F49;
+    color:white;
+    display: flex;
+    font-family: "Brevia Light";
+    padding: 1% 2%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-test span{
+    font-size: 18px;
+    margin: 0 10px;
+}
